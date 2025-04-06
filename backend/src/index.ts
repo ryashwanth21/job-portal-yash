@@ -8,7 +8,8 @@ import authRoutes from './routes/authRoutes';
 import userRoutes from './routes/userRoutes';
 
 const app = express();
-const PORT = 3000;
+const port = 33296 || 4000;
+
 
 // ✅ Middlewares
 app.use(cors());
