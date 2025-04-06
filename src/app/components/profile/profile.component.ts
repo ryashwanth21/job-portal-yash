@@ -15,7 +15,7 @@ export class ProfileComponent implements OnInit {
     const stored = localStorage.getItem('user');
     const id = stored ? JSON.parse(stored).id : null;
     if (id) {
-      this.http.get(`http://localhost:3000/api/users/${id}`).subscribe({
+      this.http.get(`https://job-portal-yash.onrender.com/api/users/${id}`).subscribe({
         next: (data) => this.user = data,
         error: (err) => console.error('Failed to load profile:', err)
       });
