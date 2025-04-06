@@ -10,7 +10,7 @@ import authRoutes from './routes/authRoutes';
 import userRoutes from './routes/userRoutes';
 
 const app = express();
-const port = process.env.PORT || 4000;
+const PORT = process.env.PORT || 4000;
 
 
 // ✅ Middlewares
