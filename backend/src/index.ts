@@ -1,4 +1,6 @@
 // src/index.ts
+import dotenv from 'dotenv';
+dotenv.config()
 import express from 'express';
 import cors from 'cors';
 import bodyParser from 'body-parser';
@@ -8,7 +10,7 @@ import authRoutes from './routes/authRoutes';
 import userRoutes from './routes/userRoutes';
 
 const app = express();
-const port = 33296 || 4000;
+const port = process.env.PORT || 4000;
 
 
 // ✅ Middlewares
